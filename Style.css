@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b16;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #080812;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 100px 40px;
+  background: radial-gradient(circle at top, #3a1c71, #0b0b16);
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.hero span {
+  color: #a66cff;
+}
+
+.hero p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: #a66cff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 1px solid #a66cff;
+  padding: 12px 24px;
+  color: #a66cff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.stats, .skills, .projects, .education, .contact {
+  padding: 70px 40px;
+}
+
+.stat-card, .skill, .project-card, .edu-card {
+  background: #13132a;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.skill-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-card:hover,
+.skill:hover,
+.stat-card:hover {
+  box-shadow: 0 0 20px rgba(166,108,255,0.5);
+  transform: translateY(-5px);
+}
+
+.contact form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #1b1b3a;
+  color: #fff;
+}
+
+.contact button {
+  background: #a66cff;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #a66cff;
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 50%;
+  display: none;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+  }
+  .navbar nav.active {
+    display: flex;
+  }
+}
