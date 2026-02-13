@@ -1,126 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Buddhadeb Kar | Software Developer</title>
-  <link rel="stylesheet" href="Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buddhadeb Kar | Software Developer</title>
+    <link rel="stylesheet" href="/Style.css" />
+  </head>
+  <body>
+    
 
-</head>
-<body>
+    <div class="particles-container" id="particles-container"></div>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="logo">BK</div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <div id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">
+                ☀️
+            </button>
+      </div>
+    </nav>
 
-<header class="navbar">
-  <div class="logo">BK</div>
-  <div class="menu-toggle" id="menuToggle">☰</div>
-  <nav id="navLinks">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <section class="hero fade-in">
+      <div class="hero-text">
+        <h1>I am <span>Buddhadeb Kar</span></h1>
+        <h3>Fresher Software Developer</h3>
+        <p>
+          Passionate about building modern web applications using React,
+          TypeScript, Java, and Firebase. Always eager to learn and grow.
+        </p>
 
-<section class="hero fade-in">
-  <div class="hero-text">
-    <h1>I am <span>Buddhadeb Kar</span></h1>
-    <h3>Fresher Software Developer</h3>
-    <p>
-      Passionate about building modern web applications using React, TypeScript,
-      Java, and Firebase. Always eager to learn and grow.
-    </p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="Buddhadeb_Kar_Resume.pdf" class="btn-outline" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="Buddhadeb_Kar_Resume.pdf" class="btn-outline" download>
-        Download Resume
-      </a>
-    </div>
-  </div>
-</section>
+    <section id="about" class="about fade-in">
+      <h2>About Me</h2>
 
-<section id="about" class="stats fade-in">
-  <div class="stat-card"><h2>10</h2><p>Projects</p></div>
-  <div class="stat-card"><h2>8</h2><p>Technologies</p></div>
-  <div class="stat-card"><h2>1</h2><p>Training</p></div>
-  <div class="stat-card"><h2>7.9</h2><p>CGPA</p></div>
-</section>
+      <p class="about-text">
+        Skilled and motivated fresher software developer with a strong
+        foundation in Java and modern web development. I enjoy building clean,
+        scalable applications and continuously improving my problem-solving
+        skills. Eager to start my professional journey and contribute to
+        real-world projects in a dynamic and challenging environment.
+      </p>
 
-<section id="skills" class="skills fade-in">
-  <h2>My Skills</h2>
-  <div class="skill-grid">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">TypeScript</div>
-    <div class="skill">React.js</div>
-    <div class="skill">Redux</div>
-    <div class="skill">Tailwind CSS</div>
-    <div class="skill">Firebase</div>
-    <div class="skill">Java</div>
-    <div class="skill">MySQL</div>
-    <div class="skill">Git</div>
-    <div class="skill">DSA</div>
-  </div>
-</section>
+      <ul class="about-list">
+        <li>
+          Fresher with hands-on experience through academic & personal projects
+        </li>
+        <li>
+          Strong foundation in Java, OOPs, and Data Structures & Algorithms
+        </li>
+        <li>Experience with React.js, TypeScript, JavaScript, HTML, and CSS</li>
+        <li>Backend & database knowledge using Firebase and MySQL</li>
+        <li>Familiar with Git, and GitHub workflow</li>
+        <li>Quick learner with strong problem-solving and teamwork skills</li>
+      </ul>
 
-<section id="projects" class="projects fade-in">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">Social Media App</div>
-    <div class="project-card">Myntra Clone</div>
-    <div class="project-card">Food Ordering Website</div>
-    <div class="project-card">To-Do List App</div>
-    <div class="project-card">Bharat Analog Clock</div>
-  </div>
-</section>
+      <h3 class="core-title">Core Focus Areas</h3>
+      <div class="core-grid">
+        <span>Web Application Development</span>
+        <span>Database Design & CRUD</span>
+        <span>Problem Solving & DSA</span>
+        <span>Code Quality</span>
+        <span>Continuous Learning</span>
+      </div>
+    </section>
 
-<section id="education" class="education fade-in">
-  <h2>Education</h2>
-  <div class="edu-card">
-    <h3>B.Tech – ECE</h3>
-    <p>Mallabhum Institute of Technology</p>
-    <p>CGPA: 7.9</p>
-  </div>
-  <div class="edu-card">
-    <h3>Diploma – ETCE</h3>
-    <p>K.G Engineering Institute</p>
-    <p>OGPA: 8.0</p>
-  </div>
-</section>
+    <section id="skills" class="skills fade-in">
+      <h2>My Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Redux</div>
+        <div class="skill">Tailwind CSS</div>
+        <div class="skill">Firebase</div>
+        <div class="skill">Java</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">DSA</div>
+        <div class="skill">C</div>
+        <div class="skill">Git</div>
+        
+      </div>
+    </section>
 
-<section id="contact" class="contact fade-in">
-  <h2>Contact Me</h2>
-  <p>If you have any opportunity or project, feel free to reach out.</p>
+    <section id="experience">
+      <h2 class="fade-in">Work Experience</h2>
+      <div class="experience-grid">
+        <div class="exp-card">
+          <h3>Web Development Trainee</h3>
+          <p class="company">Ardent Computech Pvt. Ltd.</p>
+          <p class="duration">Web Development Training (PHP & MySQL)</p>
 
-  <!-- REAL CONTACT -->
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
+          <ul>
+            <li>
+              Completed hands-on training in Web Development using PHP and MySQL
+            </li>
+            <li>Developed dynamic web pages using HTML, CSS, and JavaScript</li>
+            <li>
+              Worked with MySQL databases for CRUD operations and data handling
+            </li>
+            <li>
+              Implemented backend logic, form handling, and input validation
+            </li>
+            <li>
+              Learned real-world development workflow and debugging techniques
+            </li>
+            <li>
+              Improved problem-solving skills through practical assignments
+            </li>
+          </ul>
+        </div>
 
-    <button type="submit">Send Message</button>
-    <p id="formStatus"></p>
-  </form>
+        <div class="exp-card">
+          <h3>Java Project Trainee</h3>
+          <p class="company">Anudip Foundation</p>
+          <p class="duration">
+            Project-Based Java Training (Console Applications)
+          </p>
 
-  <div class="socials">
-    <a href="mailto:buddhadeb24052000@gmail.com">Email</a>
-    <a href="https://github.com/BuddhadebKar" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/kar-buddhadeb-bk6296525439/" target="_blank">LinkedIn</a>
-  </div>
-</section>
+          <ul>
+            <li>
+              Developed console-based Java applications as part of structured
+              training
+            </li>
+            <li>Implemented core Java concepts including OOPs principles</li>
+            <li>
+              Worked with collections, exception handling, and file handling
+            </li>
+            <li>
+              Designed menu-driven programs with proper validation and logic
+              flow
+            </li>
+            <li>
+              Applied modular coding practices and basic design principles
+            </li>
+            <li>
+              Enhanced problem-solving skills through hands-on Java projects
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<button id="topBtn">↑</button>
+    <section id="projects" class="projects fade-in">
+      <h2>Projects</h2>
 
-<footer class="footer">
-  © 2026 Buddhadeb Kar | Software Developer
-</footer>
+      <div class="project-grid">
+        <div class="project-card project-animate">
+          <h3>Secure Blog Platform</h3>
+          <p>
+            Secure blog platform with user authentication, CRUD operations, and
+            Spring Security for role-based access control. Designed to support
+            scalable and secure content management.
+          </p>
 
-<script src="Script.js"></script>
+          <div class="project-tech">
+            Java • Spring Boot • Spring Security • REST APIs • MySQL
+          </div>
 
-</body>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/BuddhadebKar/Blog-Website"
+              target="_blank"
+              class="github-btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card project-animate">
+          <h3>Food Ordering Website</h3>
+          <p>
+            Responsive food ordering web application with dynamic UI components,
+            product listing, and interactive user experience optimized for
+            multiple devices.
+          </p>
+
+          <div class="project-tech">HTML • CSS • JavaScript</div>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/BuddhadebKar/Food-Ordeing-Websie"
+              target="_blank"
+              class="github-btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card project-animate">
+          <h3>Myntra Clone</h3>
+          <p>
+            E-commerce web application replicating Myntra’s UI with reusable
+            components, responsive layouts, and modern frontend architecture.
+          </p>
+
+          <div class="project-tech">React.js • Vite • Tailwind CSS</div>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/BuddhadebKar/MyntraClone"
+              target="_blank"
+              class="github-btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card project-animate">
+          <h3>Coder To-Do List</h3>
+          <p>
+            Task management application enabling users to add, update, and
+            delete daily tasks with efficient state management and clean UI
+            design.
+          </p>
+
+          <div class="project-tech">React.js • Vite • Tailwind CSS</div>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/BuddhadebKar/Coder-To-Do-List"
+              target="_blank"
+              class="github-btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card project-animate">
+          <h3>Bharat Analog Clock</h3>
+          <p>
+            Real-time analog clock application using JavaScript logic and
+            accurate time calculations for smooth and precise clock movement.
+          </p>
+
+          <div class="project-tech">
+            TypeScript • React.js • Vite • Tailwind CSS
+          </div>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/BuddhadebKar/TSX_Bharat_Analog_Clock"
+              target="_blank"
+              class="github-btn"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education fade-in">
+      <h2>Education</h2>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>Bachelor of Technology (B.Tech) – ECE</h3>
+          <p>Mallabhum Institute of Technology</p>
+          <span>CGPA: 7.9</span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Diploma – ETCE</h3>
+          <p>K.G Engineering Institute</p>
+          <span>OGPA: 8.0</span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Higher Secondary (Class XII)</h3>
+          <p>West Bengal Council of Higher Secondary Education</p>
+          <span>Percentage: 60%</span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Secondary (Class X)</h3>
+          <p>West Bengal Board of Secondary Education</p>
+          <span>Percentage: 60%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="fade-in">Contact Me</h2>
+      <div class="contact-container">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="formStatus"></p>
+        </form>
+
+        <div class="socials fade-in">
+          <a href="https://github.com/BuddhadebKar">GitHub</a>
+          <a href="https://www.linkedin.com/in/kar-buddhadeb-bk6296525439/">LinkedIn</a>
+          <a href="mailto: buddhadeb24052000@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">© 2026 Buddhadeb Kar | Software Developer</footer>
+
+    <!-- ================= SCROLL TOP BUTTON ================= -->
+    <button id="topBtn">↑</button>
+    <script src="Script.js"></script>
+  </body>
 </html>
-
-
-
-
